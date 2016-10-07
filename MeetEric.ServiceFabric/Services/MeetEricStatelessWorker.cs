@@ -7,7 +7,6 @@
     using System.Text;
     using System.Threading;
     using System.Threading.Tasks;
-    using Messaging;
 
     public abstract class MeetEricStatelessWorker : MeetEricStatelessService
     {

@@ -8,7 +8,6 @@
     using System.Threading.Tasks;
     using MeetEric.BaseFiles;
     using MeetEric.Common;
-    using MeetEric.Messaging;
     using Collections;
     using Diagnostics;
     using Microsoft.ServiceFabric.Actors;
