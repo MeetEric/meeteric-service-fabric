@@ -163,6 +163,10 @@
       <Project>{64b7729d-5779-4ffa-a7ad-21834b70fdbe}</Project>
       <Name>MeetEric.Contracts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Core\MeetEric.Core\MeetEric.Core.csproj">
+      <Project>{b92219fa-00fd-43cb-a361-c3914fc91dbf}</Project>
+      <Name>MeetEric.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\..\packages\Microsoft.ServiceFabric.Actors.2.2.207\build\Microsoft.ServiceFabric.Actors.targets" Condition="Exists('..\..\packages\Microsoft.ServiceFabric.Actors.2.2.207\build\Microsoft.ServiceFabric.Actors.targets')" />

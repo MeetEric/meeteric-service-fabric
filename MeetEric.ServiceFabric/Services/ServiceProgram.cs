@@ -13,6 +13,11 @@
 
     public class ServiceProgram
     {
+        static ServiceProgram()
+        {
+            FactoryInitializer.Initialize();
+        }
+
         protected static void RunStateless<T>(Func<StatelessServiceContext, T> factory)
             where T : StatelessService
         {
@@ -56,7 +61,6 @@
         private static async Task RunAsync(IServiceRunner runner)
         {
             var serviceName = runner.ServiceName;
-
             var log = MeetEricFactory.GetService<ILoggingService>().CreateLoggingContext();
             var context = new Dictionary<string, string>()
             {
